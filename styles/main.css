@@ -1,0 +1,25 @@
+:root {
+  --color-violet: hsl(257, 40%, 49%);
+  --color-soft-magenta: hsl(300, 69%, 71%);
+  --color-purple: hsl(228, 45%, 44%);
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */

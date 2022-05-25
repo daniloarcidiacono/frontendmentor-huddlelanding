@@ -1,0 +1,39 @@
+:root {
+    // Colors
+    --color-violet: hsl(257, 40%, 49%);
+    --color-soft-magenta: hsl(300, 69%, 71%);
+    --color-purple: hsl(228, 45%, 44%);
+
+    // Font weights
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+}
+
+// Typography "Open Sans"
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+
+    // CSS custom properties do not work on @font-face rules!
+    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
+    font-weight: normal;
+}
+
+// Typography "Poppins"
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+
+    // CSS custom properties do not work on @font-face rules!
+    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+
+    // CSS custom properties do not work on @font-face rules!
+    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
+    font-weight: 600;
+}
