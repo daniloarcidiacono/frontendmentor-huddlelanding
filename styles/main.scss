@@ -1,39 +1,140 @@
+@import "_utils.scss";
+@import "typography.scss";
+
+$debug: false;
+
 :root {
     // Colors
+    --color-bg-primary: hsl(177, 54%, 37%);
+    --color-fg-primary: hsl(0, 0%, 100%);
+
     --color-violet: hsl(257, 40%, 49%);
     --color-soft-magenta: hsl(300, 69%, 71%);
     --color-purple: hsl(228, 45%, 44%);
+    --color-white: #fff;
 
     // Font weights
     --font-weight-normal: 400;
-    --font-weight-semibold: 600;
+    --font-weight-semibold: 600;    
 }
 
-// Typography "Open Sans"
-@font-face {
-    font-family: "Open Sans";
-    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
-
-    // CSS custom properties do not work on @font-face rules!
-    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
-    font-weight: normal;
+html {
+    width: 100%;
+    height: 100%;
 }
 
-// Typography "Poppins"
-@font-face {
-    font-family: Poppins;
-    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+body {
+    display: flex;
+    flex-flow: column nowrap;
 
-    // CSS custom properties do not work on @font-face rules!
-    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
-    font-weight: normal;
+    box-sizing: border-box;
+    margin: 0;
+    
+    font-family: sans-serif;    
+    color: var(--color-fg-primary);
 }
 
-@font-face {
-    font-family: Poppins;
-    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+.header {
+    @include outlined();
+    flex: 0 0 auto;
 
-    // CSS custom properties do not work on @font-face rules!
-    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
-    font-weight: 600;
+    &__logo {
+        @include outlined();
+        vertical-align: middle; 
+    }
 }
+
+main {
+    @include outlined();
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    aside {
+        @include outlined();
+        align-self: stretch;
+        flex: 1 1 auto;
+
+        img {
+            @include outlined();
+            display: block;
+            margin: auto;
+            
+            object-fit: contain;
+        }
+    }
+
+    section {
+        @include outlined();
+        flex: 1 1 auto;
+        
+        h1 {
+            margin: 0;
+            
+            font-family: Poppins;
+            font-weight: var(--font-weight-semibold);
+            
+            color: var(--color-white);
+        }
+
+        h2 {
+            font-family: "Open Sans";
+            font-weight: normal;
+
+            color: var(--color-white);
+        }
+
+        button {
+            font-family: Poppins;
+            font-weight: var(--font-weight-normal);
+ 
+            border: none;
+            background-color: var(--color-white);
+            color: var(--color-violet);
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
+
+            cursor: pointer;
+
+            &:hover {
+                color: var(--color-white);
+                background-color: var(--color-soft-magenta);
+            }
+        }
+    }
+}
+
+footer {
+    @include outlined();
+    flex: 0 0 auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .icons {
+        @include outlined();
+
+        span[class^=icon-] {
+            display: inline-block;
+            border-radius: 100%;
+
+            outline: 1px solid var(--color-white);
+
+            color: var(--color-white);
+
+            cursor: pointer;
+
+            &:hover {
+                color: var(--color-soft-magenta);
+                outline-color: var(--color-soft-magenta);
+            }
+        }
+    }
+}
+
+@import "main-mobile.scss";
+@import "main-desktop.scss";

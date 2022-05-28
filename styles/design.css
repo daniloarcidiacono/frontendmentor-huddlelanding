@@ -1,0 +1,34 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+html.desktop {
+  width: 1440px;
+  height: 800px;
+}
+html.desktop .design {
+  display: block;
+  width: 1440px;
+  height: 800px;
+  content: url("../design/desktop-design.jpg");
+}
+html.mobile {
+  width: 750px;
+  height: 1600px;
+}
+html.mobile .design {
+  display: block;
+  width: 750px;
+  height: 1600px;
+  content: url("../design/mobile-design.jpg");
+}
+
+.design {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  image-rendering: pixelated;
+}
+
+/*# sourceMappingURL=design.css.map */

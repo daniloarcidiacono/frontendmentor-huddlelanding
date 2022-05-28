@@ -1,0 +1,64 @@
+@import "_utils.scss";
+
+@include device(desktop) {
+    body {
+        height: 100%;
+        padding: 1.7rem 5rem;
+        background: var(--color-violet)
+                    url('../images/bg-desktop.svg') left top / auto 100% no-repeat;
+    }
+
+    .header {
+        &__logo {
+            width: 214px;
+            margin-top: 28px;
+            margin-left: -10px;
+        }
+    }
+
+    main {
+        gap: 3.5rem;
+        align-items: center;
+
+        aside {
+            flex-basis: 57.5%;
+
+            img {
+                height: 100%;
+                max-width: 100%;
+            }
+        }
+
+        section {
+            flex-basis: 42.5%;
+            
+            h1 {
+                // Fluid typography
+                // See https://css-tricks.com/simplified-fluid-typography/
+                font-size: min(max(1rem, 3.5vw), 2.5rem);
+            }
+
+            h2 {
+                font-size: 1.12rem;
+            }
+
+            button {
+                padding: 0.9rem 4rem;
+                border-radius: 32px;
+                margin-top: 1rem;
+                font-size: 1.1rem;                
+            }
+        }
+    }
+
+    footer {
+        .icons {
+            margin-right: 0.6rem;
+    
+            span[class^=icon-] {
+                padding: 0.75rem;
+                margin-left: 0.7rem;
+            }
+        }
+    }
+}

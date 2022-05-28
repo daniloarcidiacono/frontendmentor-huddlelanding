@@ -1,9 +1,11 @@
 .attribution { 
-    font-size: 1rem; 
-    text-align: center; 
-    // color: var(--color-white); 
-
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-normal);
+    color: var(--color-white); 
+    
     a {
-        color: var(--color-purple); 
+        color: var(--color-soft-magenta); 
     }
 }

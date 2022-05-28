@@ -1,0 +1,29 @@
+$debug: true !default;
+
+@mixin outlined() {
+    @if $debug {
+        outline: 1px solid orange;
+    }
+}
+
+@mixin device($breakpoint) {
+    @if $breakpoint == mobile {        
+        // From https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints
+        //
+        // "Note that since browsers do not currently support range context queries, we work around 
+        //  the limitations of min- and max- prefixes and viewports with fractional widths (which can 
+        //  occur under certain conditions on high-dpi devices, for instance) by using values with higher 
+        //  precision for these comparisons."
+        //
+        // See also: https://github.com/elementor/elementor/issues/5221#issuecomment-518580100
+        @media (max-width: 750.98px) {
+            @content;
+        }
+    }
+    
+    @if $breakpoint == desktop {
+        @media screen and (min-width: 751px) {
+            @content;
+        }
+    }
+}

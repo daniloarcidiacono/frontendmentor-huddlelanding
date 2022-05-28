@@ -1,0 +1,32 @@
+// Open Sans font
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+
+    // CSS custom properties do not work on @font-face rules!
+    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
+    font-weight: normal;
+}
+
+// Poppins font
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+
+    // CSS custom properties do not work on @font-face rules!
+    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+
+    // CSS custom properties do not work on @font-face rules!
+    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
+    font-weight: 600;
+}
+
+// icomoon font
+$icomoon-font-path: "../fonts/icomoon";
+@import "../fonts/icomoon/style";

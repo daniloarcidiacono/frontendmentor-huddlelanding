@@ -1,0 +1,50 @@
+@media screen and (min-width: 751px) {
+  body {
+    height: 100%;
+    padding: 1.7rem 5rem;
+    background: var(--color-violet) url("../images/bg-desktop.svg") left top/auto 100% no-repeat;
+  }
+
+  .header__logo {
+    width: 214px;
+    margin-top: 28px;
+    margin-left: -10px;
+  }
+
+  main {
+    gap: 3.5rem;
+    align-items: center;
+  }
+  main aside {
+    flex-basis: 57.5%;
+  }
+  main aside img {
+    height: 100%;
+    max-width: 100%;
+  }
+  main section {
+    flex-basis: 42.5%;
+  }
+  main section h1 {
+    font-size: min(max(1rem, 3.5vw), 2.5rem);
+  }
+  main section h2 {
+    font-size: 1.12rem;
+  }
+  main section button {
+    padding: 0.9rem 4rem;
+    border-radius: 32px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  footer .icons {
+    margin-right: 0.6rem;
+  }
+  footer .icons span[class^=icon-] {
+    padding: 0.75rem;
+    margin-left: 0.7rem;
+  }
+}
+
+/*# sourceMappingURL=main-desktop.css.map */

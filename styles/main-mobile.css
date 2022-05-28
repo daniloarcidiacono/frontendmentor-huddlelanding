@@ -1,0 +1,58 @@
+@media (max-width: 750.98px) {
+  body {
+    height: 100%;
+    padding: 1.7rem 5rem;
+    background: var(--color-violet) url("../images/bg-mobile.svg") left top/100% auto no-repeat;
+  }
+
+  .header__logo {
+    width: 15.9rem;
+    margin-top: 2.37rem;
+    margin-left: -0.625rem;
+  }
+
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside img {
+    width: 100%;
+    max-height: 100%;
+    margin-top: 7rem;
+  }
+  main section {
+    margin-top: 8rem;
+    text-align: center;
+  }
+  main section h1 {
+    font-size: 3rem;
+  }
+  main section h2 {
+    font-size: 1.95rem;
+    line-height: 3rem;
+  }
+  main section button {
+    display: block;
+    padding: 1.4rem 0;
+    margin: 2.5rem auto 0 auto;
+    border-radius: 64px;
+    width: 66%;
+    font-size: 1.5rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
+  footer .attribution {
+    order: 2;
+  }
+  footer .icons {
+    margin-top: 8.5rem;
+  }
+  footer .icons span[class^=icon-] {
+    padding: 0.85rem;
+    margin-left: 1.25rem;
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=main-mobile.css.map */
